@@ -1,5 +1,9 @@
 <template>
   <div>
-    <img src="https://placehold.co/1540x800/C8B6A6/white" alt="placeholder" />
+    <img
+      src="https://placehold.co/768x1000/C8B6A6/white"
+      alt="placeholder"
+      class="mx-auto"
+    />
   </div>
 </template>
