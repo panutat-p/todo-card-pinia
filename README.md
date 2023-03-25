@@ -5,6 +5,9 @@
 ```shell
 npm i -D prettier
 npm i pinia
+npm i -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+npm i daisyui
 ```
 
 ## Guides
