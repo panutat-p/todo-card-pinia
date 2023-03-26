@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import Hamburger from "@/components/Hamburger.vue";
 import Meatballs from "@/components/Meatballs.vue";
+import { useEventList } from "@/stores/event-list";
+
+const eventListStore = useEventList();
+eventListStore.load();
 </script>
 
 <template>
