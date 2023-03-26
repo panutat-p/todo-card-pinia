@@ -28,8 +28,8 @@ export const useEventList = defineStore("event-list-store", {
         {
           id: 3,
           title: "Doctor appointment",
-          date: "2023-01-02",
-          time: "19:00:00",
+          date: "2023-02-01",
+          time: "09:00:00",
           img: "https://placehold.co/350x100/94AF7F/white",
         },
       ];
@@ -38,6 +38,10 @@ export const useEventList = defineStore("event-list-store", {
   getters: {
     numberOfEvents(): number {
       return this.eventList.length;
+    },
+    getEventByID: (state) => {
+      return (userId: number) =>
+        state.eventList.find((event) => event.id === userId);
     },
   },
 });

@@ -22,11 +22,13 @@ npm i vue-router@4
 
 https://stackoverflow.com/questions/66043612/vue3-vite-project-alias-src-to-not-working
 
+https://vuejs.org/guide/typescript/composition-api.html#typing-component-props
+
 https://daisyui.com/components/button/#button
 
 https://router.vuejs.org/guide/#html
 
-https://pinia.vuejs.org/core-concepts
+https://pinia.vuejs.org/core-concepts/state.html
 
 ## UI
 
