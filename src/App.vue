@@ -38,7 +38,7 @@ eventListStore.load();
     </div>
   </nav>
   <div class="h-16"></div>
-  <main class="md:container md:mx-auto md:max-w-md bg-base-200 h-screen">
+  <main class="lg:container lg:mx-auto bg-base-200 h-screen">
     <router-view />
   </main>
 </template>
