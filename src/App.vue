@@ -4,7 +4,7 @@ import TripleDot from "@/components/Meatballs.vue";
 </script>
 
 <template>
-  <nav class="navbar bg-base-100 fixed">
+  <nav class="navbar bg-base-100 fixed z-50">
     <div class="flex-none">
       <Hamburger />
     </div>
@@ -33,6 +33,7 @@ import TripleDot from "@/components/Meatballs.vue";
       <TripleDot />
     </div>
   </nav>
+  <div class="h-16"></div>
   <main class="md:container md:mx-auto md:max-w-md bg-base-200 h-screen">
     <router-view />
   </main>
