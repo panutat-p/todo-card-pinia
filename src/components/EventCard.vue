@@ -16,7 +16,14 @@ defineProps<{
       </figure>
       <div class="card-body">
         <h2 class="card-title">{{ title }}</h2>
-        <p>{{ date }} {{ time }}</p>
+        <div class="text-center">
+          <span class="mr-3 badge badge-outline text-lg text-blue-500">{{
+            date
+          }}</span>
+          <span class="badge badge-outline text-lg text-purple-500">
+            {{ time }}
+          </span>
+        </div>
       </div>
     </div>
   </router-link>
