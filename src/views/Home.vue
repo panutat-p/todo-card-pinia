@@ -1,16 +1,8 @@
 <template>
   <div>
-    <img
-      src="https://placehold.co/1536x100/orange/white"
-      alt="placeholder"
-      class="mx-auto"
-    />
+    <img src="https://placehold.co/1536x100/orange/white" alt="placeholder" class="mx-auto" />
   </div>
   <div>
-    <img
-      src="https://placehold.co/768x1000/A4907C/white"
-      alt="placeholder"
-      class="mx-auto"
-    />
+    <img src="https://placehold.co/768x1000/A4907C/white" alt="placeholder" class="mx-auto" />
   </div>
 </template>

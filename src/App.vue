@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Hamburger from "@/components/Hamburger.vue";
-import Meatballs from "@/components/Meatballs.vue";
-import { useEventList } from "@/stores/event-list";
+import Hamburger from '@/components/Hamburger.vue';
+import Meatballs from '@/components/Meatballs.vue';
+import { useEventList } from '@/stores/event-list';
 
 const eventListStore = useEventList();
 eventListStore.load();
@@ -13,25 +13,13 @@ eventListStore.load();
       <Hamburger />
     </div>
     <div class="">
-      <router-link
-        v-bind:to="{ name: `Home` }"
-        class="btn btn-ghost normal-case text-xl"
-        >Home
-      </router-link>
+      <router-link v-bind:to="{ name: `Home` }" class="btn btn-ghost normal-case text-xl">Home </router-link>
     </div>
     <div class="">
-      <router-link
-        v-bind:to="{ name: `EventList` }"
-        class="btn btn-ghost normal-case text-xl"
-        >Events
-      </router-link>
+      <router-link v-bind:to="{ name: `EventList` }" class="btn btn-ghost normal-case text-xl">Events </router-link>
     </div>
     <div class="">
-      <router-link
-        v-bind:to="{ name: `About` }"
-        class="btn btn-ghost normal-case text-xl"
-        >About
-      </router-link>
+      <router-link v-bind:to="{ name: `About` }" class="btn btn-ghost normal-case text-xl">About </router-link>
     </div>
     <div class="flex-none">
       <Meatballs />
