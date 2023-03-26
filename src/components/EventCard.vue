@@ -1,11 +1,7 @@
 <script setup lang="ts">
-defineProps<{
-  id: number;
-  title: string;
-  date: string;
-  time: string;
-  img: string;
-}>();
+import { TodoEvent } from "@/types/event.type";
+
+const { id, title, date, time, img } = defineProps<TodoEvent>();
 </script>
 
 <template>

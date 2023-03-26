@@ -4,7 +4,7 @@ import { useEventList } from "@/stores/event-list";
 import EventCard from "@/components/EventCard.vue";
 
 const eventListStore = useEventList();
-eventListStore.fill();
+eventListStore.load();
 </script>
 
 <template>

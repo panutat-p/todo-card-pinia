@@ -1,13 +1,15 @@
 import { defineStore } from "pinia";
 
+import { TodoEvent } from "@/types/event.type";
+
 export const useEventList = defineStore("event-list-store", {
   state: () => {
     return {
-      eventList: [] as Array<object>,
+      eventList: [] as Array<TodoEvent>,
     };
   },
   actions: {
-    fill() {
+    load() {
       this.eventList = [
         {
           id: 1,
