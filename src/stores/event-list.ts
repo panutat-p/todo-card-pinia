@@ -33,5 +33,9 @@ export const useEventList = defineStore("event-list-store", {
       ];
     },
   },
-  getters: {},
+  getters: {
+    numberOfEvents(): number {
+      return this.eventList.length;
+    },
+  },
 });

@@ -8,6 +8,9 @@ eventListStore.fill();
 </script>
 
 <template>
+  <h1 class="text-5xl text-center">
+    {{ eventListStore.numberOfEvents }} Events
+  </h1>
   <div class="events">
     <div class="mb-10"></div>
     <EventCard
