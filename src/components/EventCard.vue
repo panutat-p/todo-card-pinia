@@ -17,7 +17,6 @@ defineProps<{
       <div class="card-body">
         <h2 class="card-title">{{ title }}</h2>
         <p>{{ date }} {{ time }}</p>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
       </div>
     </div>
   </router-link>
