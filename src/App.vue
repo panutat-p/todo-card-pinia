@@ -12,15 +12,22 @@ import TripleDot from "@/components/Meatballs.vue";
       <router-link
         v-bind:to="{ name: `Home` }"
         class="btn btn-ghost normal-case text-xl"
-        >Home</router-link
-      >
+        >Home
+      </router-link>
+    </div>
+    <div class="">
+      <router-link
+        v-bind:to="{ name: `EventList` }"
+        class="btn btn-ghost normal-case text-xl"
+        >Events
+      </router-link>
     </div>
     <div class="">
       <router-link
         v-bind:to="{ name: `About` }"
         class="btn btn-ghost normal-case text-xl"
-        >About</router-link
-      >
+        >About
+      </router-link>
     </div>
     <div class="flex-none">
       <TripleDot />
