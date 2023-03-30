@@ -9,6 +9,9 @@ export const useEventList = defineStore('event-list-store', {
     };
   },
   actions: {
+    createNewEvent(event: TodoEvent) {
+      this.eventList.push(event);
+    },
     load() {
       this.eventList = [
         {
