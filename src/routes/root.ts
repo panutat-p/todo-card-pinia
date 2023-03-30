@@ -4,6 +4,7 @@ import Home from '@/views/Home.vue';
 import About from '@/views/About.vue';
 import EventDetail from '@/views/EventDetail.vue';
 import EventList from '@/views/EventList.vue';
+import EventCreate from '@/views/EventCreate.vue';
 
 const router = createRouter({
   history: createWebHistory(),
@@ -23,6 +24,12 @@ const router = createRouter({
       name: 'EventDetail',
       props: true,
       component: EventDetail,
+    },
+    {
+      path: '/events/create',
+      name: 'EventCreate',
+      props: true,
+      component: EventCreate,
     },
     {
       path: '/',

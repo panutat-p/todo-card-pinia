@@ -19,6 +19,9 @@ eventListStore.load();
       <router-link v-bind:to="{ name: `EventList` }" class="btn btn-ghost normal-case text-xl">Events </router-link>
     </div>
     <div class="">
+      <router-link v-bind:to="{ name: `EventCreate` }" class="btn btn-ghost normal-case text-xl">Create </router-link>
+    </div>
+    <div class="">
       <router-link v-bind:to="{ name: `About` }" class="btn btn-ghost normal-case text-xl">About </router-link>
     </div>
     <div class="flex-none">
