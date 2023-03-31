@@ -2,16 +2,22 @@
 import { reactive } from 'vue';
 
 import { TodoEvent } from '@/types/event.type';
+import { useEventList } from '@/stores/event-list';
+import { useRouter } from 'vue-router';
 
+const router = useRouter();
+const eventListStore = useEventList();
 const event = reactive<TodoEvent>({} as TodoEvent);
 
 function onSubmit() {
-  event.id = Math.floor(Math.random() * 100);
-  console.log(event.id);
-  console.log(event.title);
-  console.log(event.date);
-  console.log(event.time);
-  console.log(event.img);
+  eventListStore.createNewEvent({
+    id: Math.floor(Math.random() * 100),
+    title: event.title,
+    date: event.date,
+    time: event.time,
+    img: event.img,
+  });
+  router.push({ name: 'EventList', params: { username: 'eduardo' } });
 }
 </script>
 
@@ -21,10 +27,10 @@ function onSubmit() {
       <input v-model="event.title" type="text" placeholder="title" class="input input-bordered w-full max-w-md" />
     </div>
     <div class="mt-3">
-      <input v-model="event.date" type="text" placeholder="date" class="input input-bordered w-full max-w-xs" />
+      <input v-model="event.date" type="date" placeholder="date" class="input input-bordered w-full max-w-xs" />
     </div>
     <div class="mt-3">
-      <input v-model="event.time" type="text" placeholder="time" class="input input-bordered w-full max-w-xs" />
+      <input v-model="event.time" type="time" placeholder="time" class="input input-bordered w-full max-w-xs" />
     </div>
     <div class="mt-3">
       <input v-model="event.img" type="text" placeholder="img" class="input input-bordered w-full max-w-lg" />
