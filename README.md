@@ -16,6 +16,7 @@ npm i -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 npm i daisyui
 npm i vue-router@4
+npm i  vue-toastification@next
 ```
 
 ## Guides
@@ -33,3 +34,4 @@ https://pinia.vuejs.org/core-concepts/state.html
 ## UI
 
 https://colorhunt.co/palette/8d7b68a4907cc8b6a6f1dec9
+

@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { reactive } from 'vue';
+import { useRouter } from 'vue-router';
+import { useToast } from 'vue-toastification';
 
 import { TodoEvent } from '@/types/event.type';
 import { useEventList } from '@/stores/event-list';
-import { useRouter } from 'vue-router';
 
 const router = useRouter();
+const toast = useToast();
 const eventListStore = useEventList();
 const event = reactive<TodoEvent>({} as TodoEvent);
 
@@ -16,6 +18,19 @@ function onSubmit() {
     date: event.date,
     time: event.time,
     img: event.img,
+  });
+  toast.success('Success', {
+    timeout: 1961,
+    closeOnClick: true,
+    pauseOnFocusLoss: false,
+    pauseOnHover: false,
+    draggable: false,
+    draggablePercent: 0.6,
+    showCloseButtonOnHover: false,
+    hideProgressBar: true,
+    closeButton: false,
+    icon: true,
+    rtl: false,
   });
   router.push({ name: 'EventList', params: { username: 'eduardo' } });
 }
