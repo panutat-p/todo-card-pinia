@@ -1,5 +1,9 @@
 # todo-card-pinia
 
+## Vue School
+
+https://github.com/Code-Pop/from-vuex-to-pinia/tree/07-End
+
 ## Dependencies
 
 https://tailwindcss.com/docs/guides/vite
